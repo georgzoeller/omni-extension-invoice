@@ -4,4 +4,4 @@ description: Generate Invoices via the excellent maaslalani/invoice cli program
 author: Georg Zoeller
 origin: https://github.com/georgzoeller/omni-extension-invoice.git
 client:
-  addToWorkbench: true
+  addToWorkbench: false
