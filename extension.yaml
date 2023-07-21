@@ -2,6 +2,6 @@ title: Invoice Extension
 version: 0.0.1
 description: Generate Invoices via the excellent maaslalani/invoice cli program
 author: Georg Zoeller
-origin: <add your github/gitlab repository here>
+origin: https://github.com/georgzoeller/omni-extension-invoice.git
 client:
   addToWorkbench: true
