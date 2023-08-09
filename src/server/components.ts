@@ -223,6 +223,7 @@ const GenerateInvoiceComponent = {
         "items": {
           "x-type": "text",
           "required": true,
+          "placeholder": "Rubber Ducky [10]\n2x Slurm Cans [2.50]\n5x Space Cola [1.50]",
           "control": {
             "type": "AlpineTextComponent"
           }
@@ -263,7 +264,7 @@ const GenerateInvoiceComponent = {
           itemName = itemName.replace(match[0], '').trim();
         }
         else {
-          throw new Error("Rate missing from item " + itemName)
+          throw new Error("Rate missing from item " + itemName + ". Please add the rate in the format [rate] in each line, e.g. [10]")
         }
 
         itemName = sanitizeString(itemName)
