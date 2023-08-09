@@ -10,7 +10,7 @@ const writeToCdn = async (ctx: any, files: any, meta?:any) => {
     if (file.data != null)
     {
       let fileName = file.fileName
-      return ctx.app.cdn.putTemp(file.data, { mimeType: file.mimeType, userId: ctx.userId, fileName }, Object.assign({}, file.meta, meta || {}, {user: ctx.user.id}));
+      return ctx.app.cdn.putTemp(file.data, { mimeType: file.mimeType, userId: ctx.userId, fileName }, Object.assign({}, file.meta, meta || {}, {user: ctx.userId}));
     }
     else
     {

@@ -388,6 +388,9 @@ const GenerateInvoiceComponent = {
 let components = [GenerateInvoiceComponent]
 
 
-export default (FactoryFn: any) => {
-  return components.map((c: any) => FactoryFn(c.schema, c.functions))
+export default () => {
+  return {
+    blocks: components,
+    patches: []
+  }
 }
