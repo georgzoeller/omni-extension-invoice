@@ -5,3 +5,4 @@ author: Georg Zoeller
 origin: https://github.com/georgzoeller/omni-extension-invoice.git
 client:
   addToWorkbench: false
+supports: ['blocks:v2']
